@@ -12,9 +12,9 @@
 </div>
 <div id="print-btn"></div>
 <button id="submit">Download PDF File</button>
-<!-- Script -->
- 
 
+    
+<script>
 var doc = new jsPDF();
 var specialElementHandlers = {
     '#print-btn': function (element, renderer) {
@@ -29,7 +29,7 @@ $('#submit').click(function () {
     });
     doc.save('pdf-version.pdf');
 });
- 
-
+</script>
+     
 </body>
 </html>
